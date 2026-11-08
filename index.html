@@ -46,6 +46,9 @@ section{min-height:100vh}
 @keyframes twk{50%{opacity:.15;transform:scale(.5)}}@keyframes fwv{50%{transform:skewY(-9deg)}}
 @keyframes drop{from{transform:translateY(-60px) rotate(-1.5deg);opacity:0}}@keyframes pulse2{50%{transform:scale(1.06)}}
 @media(prefers-reduced-motion:reduce){.cl,.bd,.bt,.bob,.bob2,.spin,.wave,.tw,.fw,.tt-go,.tt-plate{animation:none}}
+#s2 .cbx{animation:cbx 1.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center bottom}@keyframes cbx{50%{transform:translateY(-3px) rotate(-4deg)}}
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}.ct2{font:inherit;font-size:10px;line-height:1.4;color:#3a3430;background:#fff;border:2px solid #eadfd2;border-radius:12px;padding:4px;cursor:pointer;text-align:center}.ct2 svg{border-radius:8px;display:block;margin-bottom:3px}
+@media(prefers-reduced-motion:reduce){#s2 .cbx{animation:none}}
 .mc{position:relative}.fbd{position:absolute;top:3px;right:3px;width:24px;height:24px;filter:drop-shadow(0 1px 2px #0003)}
 .fvb{font:inherit;display:inline-flex;align-items:center;gap:8px;border:2px solid #ff9db5;background:#fff;color:#c2415f;border-radius:999px;padding:4px 16px 4px 8px;cursor:pointer}.fvb span{width:30px;height:30px;display:block}.fvb.on{background:#fff0f4}.fvb.on span{animation:hpop .4s}
 @keyframes hpop{40%{transform:scale(1.45) rotate(-8deg)}}
@@ -579,11 +582,11 @@ window.A2=(function(){
 const M=(s=84)=>`<svg width="${s}" height="${s}" viewBox="0 0 100 100"><circle cx="50" cy="54" r="34" fill="#ffe0c2"/><path d="M16 50C18 18 82 18 84 50 70 38 30 38 16 50z" fill="#4a3a30"/><circle cx="39" cy="58" r="4.5" fill="#3a3430"/><circle cx="61" cy="58" r="4.5" fill="#3a3430"/><circle cx="31" cy="67" r="5" fill="#ff9d8a" opacity=".55"/><circle cx="69" cy="67" r="5" fill="#ff9d8a" opacity=".55"/><path d="M43 70q7 6 14 0" stroke="#3a3430" fill="none" stroke-width="3" stroke-linecap="round"/><rect x="62" y="82" width="30" height="16" rx="3" fill="#6a8fd0"/><text x="77" y="94" font-size="10" fill="#fff" text-anchor="middle">&lt;/&gt;</text></svg>`;
 const K=["g","s","a","n","m"];
 const P={
-g:{e:"🔭",n:"「なぜ？」を深くしらべる力",l:"ふかぼり山",c:"#e0a526",d:"なっとくできる理由があると、ぐんと力が出ます。しらべたり考えたりするのが得意で、まわりのこともよく感じとれます。",t:["かんたんすぎる時は「もっと先」をしらべてみる","「どうして？」は大切な質問。聞いていいんだよ"]},
-s:{e:"🧩",n:"見通しとルールで力が出る",l:"ルールの城",c:"#4a9a8a",d:"じゅんばんや予定がわかると、安心して力を出せます。きまりを守るまじめさや、ていねいさがあります。",t:["やることを紙や絵にして、見えるところに置く","わからない言葉は「どういう意味？」と聞く"]},
-a:{e:"⚡",n:"ひらめきと切りかえの早さ",l:"ひらめきの町",c:"#6a8fd0",d:"アイデアがぽんぽん浮かび、気持ちの切りかえも早いです。元気で、行動力があります。",t:["思いついたことはメモにすぐ書く","タイマーやカードを味方にして、はじめの一歩を作る"]},
-n:{e:"🐢",n:"ゆっくり確かめる力",l:"ゆっくりの森",c:"#8a7ac0",d:"じっくり考えて、ていねいに進められます。かんたんに流されず、まわりをよく見ています。",t:["時間がほしい時は「ちょっと待ってね」と言っていい","準備の時間を先に作ると、もっと力が出る"]},
-m:{e:"🌤",n:"その日のようすに合わせる力",l:"ようすの島",c:"#d0788a",d:"体の調子や気分、まわりの人にあわせて動けます。その日の自分に気づけるのは、大切な力です。",t:["「今日の自分は元気？」を一日一回、自分にきく","つかれた日は、ゆっくりする日と決めていい"]}};
+g:{e:"🔭",n:"「なぜ？」を深くしらべる力",l:"ふかぼり山",c:"#e0a526",d:"なっとくできる理由があると、ぐんと力が出ます。しらべたり考えたりするのが得意で、まわりのこともよく感じとれます。",t:["かんたんすぎる時は「もっと先」をしらべてみる","「どうして？」は大切な質問。聞いていいんだよ","「もっと知りたい！」と思ったら、本や図鑑でしらべてみる","わかったことを、だれかにひとこと教えてみる"]},
+s:{e:"🧩",n:"見通しとルールで力が出る",l:"ルールの城",c:"#4a9a8a",d:"じゅんばんや予定がわかると、安心して力を出せます。きまりを守るまじめさや、ていねいさがあります。",t:["やることを紙や絵にして、見えるところに置く","わからない言葉は「どういう意味？」と聞く","「いつ終わる？」と先に聞くと、安心して取りかかれる","手順を3つに分けると、進めやすくなる"]},
+a:{e:"⚡",n:"ひらめきと切りかえの早さ",l:"ひらめきの町",c:"#6a8fd0",d:"アイデアがぽんぽん浮かび、気持ちの切りかえも早いです。元気で、行動力があります。",t:["思いついたことはメモにすぐ書く","タイマーやカードを味方にして、はじめの一歩を作る","アイデアが多すぎたら、いちばんやりたいものに○をつける","切りかえたい時は、深呼吸してから次のことを始める"]},
+n:{e:"🐢",n:"ゆっくり確かめる力",l:"ゆっくりの森",c:"#8a7ac0",d:"じっくり考えて、ていねいに進められます。かんたんに流されず、まわりをよく見ています。",t:["時間がほしい時は「ちょっと待ってね」と言っていい","準備の時間を先に作ると、もっと力が出る","ゆっくりでも、さいごまでやりきるのはすごい力","「いまは考え中」と、気持ちを言葉にしてみる"]},
+m:{e:"🌤",n:"その日のようすに合わせる力",l:"ようすの島",c:"#d0788a",d:"体の調子や気分、まわりの人にあわせて動けます。その日の自分に気づけるのは、大切な力です。",t:["「今日の自分は元気？」を一日一回、自分にきく","つかれた日は、ゆっくりする日と決めていい","調子がいい日は、やりたいことを少しだけ多めにしてみる","もやもやしたら、好きなことを5分だけやってみる"]}};
 const CAT=[["🏫","学校","#6a8fd0"],["🎮","ゲームづくり","#e0a526"],["👫","友だち","#d0788a"],["🏠","おうち","#4a9a8a"],["🌤","自分の気もち","#8a7ac0"]];
 // [カテゴリ, ものがたり名, くふう, [[絵, ばめん, [g,s,a,n,m]]x4]]
 const CODE="ctsg cfsg ctnk cfss hsug hsdg hfsw hfst hasg hfnd hfdg hasn hmsa hmsf hmnk hmse nsdr ctss hsnn hsss yasa ysss yasf yask cfsg cfnw cfug csnk yasd cfsb yfdn yfsh hsnw hsuw hmsn hssc hsna hsdk hmsa csst yasn yfsk ymsf yass casn cfun ctsn csnk hssg hsuw hfsg hssg casg cfug cfst ctsn casw cfnw cfsw cass cfsp hsnp hasp hfss hmsa yasm hmsf hsnn hmsf hmnw hmss hsss hsss yfsn hsnk hssh hsdw nsdr yfnn hssg".split(" ");
@@ -658,7 +661,7 @@ const na=Math.max(1,cntD()+tl.total),fl=(s,n,k)=>Math.min(3,1+Math.floor((s[k]+t
 const ch=K.filter(k=>sc[k]>bf[k]).map(k=>({k,b:SG(bf[k]+tl[k]),a:SG(sc[k]+tl[k])}));
 if(!ch.length||!nt)return go();
 const o=document.createElement("div");o.id="pu";o.className="pu";o.setAttribute("role","dialog");o.setAttribute("aria-modal","true");
-o.innerHTML=`<div class="pub"><h3>🗺 ぼくの大陸が かわったよ！</h3>${ch.map(c=>c.a>c.b?`<div class="pr"><span class="pi">${mini(c.k,c.b)}</span><span class="ar">➡</span><span class="pi">${mini(c.k,c.a)}</span></div><div class="pm">✨ <b>${P[c.k].l}</b>：${TXT[c.k][c.a-1]}</div>`:`<div class="pr"><span class="pi">${mini(c.k,c.a)}</span><span>🌱 <b>${P[c.k].l}</b> が すこし 育ったよ</span></div>`).join("")}<button class="pgo" onclick="A2.pu()">つぎへ すすむ</button><button class="pg2" onclick="A2.pu(1)">もう出さない（ものがたりをえらぶ画面で もどせるよ）</button></div>`;document.body.appendChild(o)}
+o.innerHTML=`<div class="pub"><h3>🗺 ぼくの大陸が かわったよ！</h3>${ch.map(c=>c.a>c.b?`<div class="pr"><span class="pi">${mini(c.k,c.b)}</span><span class="ar">➡</span><span class="pi">${mini(c.k,c.a)}</span></div><div class="pm">✨ <b>${P[c.k].l}</b>：${TXT[c.k][c.a-1]}<br>🎁 宝箱が 1こ ふえたよ！</div>`:`<div class="pr"><span class="pi">${mini(c.k,c.a)}</span><span>🌱 <b>${P[c.k].l}</b> が すこし 育ったよ</span></div>`).join("")}<button class="pgo" onclick="A2.pu()">つぎへ すすむ</button><button class="pg2" onclick="A2.pu(1)">もう出さない（ものがたりをえらぶ画面で もどせるよ）</button></div>`;document.body.appendChild(o)}
 function pu(off){if(off){nt=0;svn()}const o=document.getElementById("pu");if(o)o.remove();go()}
 function go(){
 if(ti<3)return turn(si,ti+1);const s=ST[si];
@@ -713,6 +716,8 @@ return s}
 const mini=(k,st)=>`<svg viewBox="-68 -50 136 84" width="100%" style="display:block;border-radius:10px;background:#cfeaff">${dr(k,st)}</svg>`;
 function map(n){const st={};K.forEach(k=>st[k]=SG(sc[k]));const tot=K.reduce((a,k)=>a+st[k],0);
 const flag=(x,y,o,c)=>{let h='';for(let i=0;i<o;i++)h+=`<line x1="${x+i*9}" y1="${y}" x2="${x+i*9}" y2="${y-22}" stroke="#6b4a2f" stroke-width="2"/><path class="fl" d="M${x+i*9} ${y-22}l14 5-14 5z" fill="${c}"/>`;return h};
+const avl={};K.forEach(k=>avl[k]=Math.max(0,st[k]-opn(k)));LA=avl;
+const cx=(k,x,y)=>{const n=avl[k],ox=x+(x>=290?-1:1)*(6*P[k].l.length+16),on=n>0;return `<g transform="translate(${ox} ${y-5})" style="cursor:pointer" onclick="A2.visit('${k}')"><g class="${on?'cbx':''}"><rect x="-11" y="-7" width="22" height="14" rx="2" fill="${on?'#b5773a':'#b8b0a4'}" stroke="#6b4423" stroke-width="1.5"/><path d="M-11-7q0-9 11-9t11 9z" fill="${on?'#c98b4e':'#cfc8bc'}" stroke="#6b4423" stroke-width="1.5"/><rect x="-2" y="-9" width="4" height="7" rx="1" fill="${on?'#ffd95a':'#d8d3c8'}" stroke="#6b4423"/><circle cx="12" cy="-12" r="7" fill="${on?'#ef4f6f':'#9a9a9a'}"/><text x="12" y="-8.5" font-size="9" font-weight="700" text-anchor="middle" fill="#fff">${n}</text></g></g>`};
 const lab=(x,y,k)=>`<text x="${x}" y="${y}" font-size="12" font-weight="700" text-anchor="middle" fill="#4a3a30">${P[k].l}</text><text x="${x}" y="${y+14}" font-size="10" text-anchor="middle" fill="#8a6a50" letter-spacing="2">${"●".repeat(st[k])+"○".repeat(4-st[k])}</text>`;
 const pl=(k,x,y,fx)=>`<g class="place" onclick="A2.visit('${k}')" transform="translate(${x} ${y}) scale(.9)"><g class="${st[k]>(ls[k]||0)?"up":""}">${dr(k,st[k])}${flag(fx,20,Math.min(3,st[k]),P[k].c)}</g></g>`;
 const rd=(t,d)=>tot>=t?`<path d="${d}" stroke="#c9a56a" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 9" fill="none"/>`:"";
@@ -722,12 +727,12 @@ const out=`<svg viewBox="0 0 360 440" width="100%" style="border-radius:18px;dis
 <path d="M60 90C80 40 200 30 290 70c50 30 50 110 30 170-10 60-50 100-110 110-70 8-150-10-170-80C20 220 40 140 60 90z" fill="#f2e3b8" stroke="#d8c48a" stroke-width="3"/>
 <path d="M60 130C110 120 130 160 170 200s40 90 40 150" fill="none" stroke="#7fc4e8" stroke-width="7" stroke-linecap="round"/><path class="rv" d="M60 130C110 120 130 160 170 200s40 90 40 150" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="10 8" opacity=".8"/>
 ${rd(3,"M110 150Q180 165 235 135")}${rd(6,"M100 160Q95 220 105 250")}${rd(9,"M255 140Q270 200 262 255")}${rd(12,"M125 275Q190 290 240 280")}${rd(15,"M265 300Q285 340 298 365")}
-${pl("g",90,125,44)}${lab(90,170,"g")}${pl("s",255,115,44)}${lab(255,160,"s")}${pl("a",105,270,44)}${lab(105,312,"a")}${pl("n",262,275,50)}${lab(262,318,"n")}${pl("m",300,385,40)}${lab(300,427,"m")}
+${pl("g",90,125,44)}${lab(90,170,"g")}${cx("g",90,170)}${pl("s",255,115,44)}${lab(255,160,"s")}${cx("s",255,160)}${pl("a",105,270,44)}${lab(105,312,"a")}${cx("a",105,312)}${pl("n",262,275,50)}${lab(262,318,"n")}${cx("n",262,318)}${pl("m",300,385,40)}${lab(300,427,"m")}${cx("m",300,427)}
 ${bt}${tot>=10?'<path d="M60 70q4-5 8 0q4-5 8 0M84 58q4-5 8 0q4-5 8 0M110 72q4-5 8 0q4-5 8 0" fill="none" stroke="#555" stroke-width="1.5"/>':""}
 <text class="dr2" x="0" y="62" font-size="26">☁️</text><text x="180" y="22" font-size="14" font-weight="700" text-anchor="middle" fill="#3a5a6a">ぼくの大陸</text></svg>`;
 ls={...st};try{localStorage.setItem("tgl",JSON.stringify(ls))}catch(e){}return out}
 function res(){vis=new Set();const tl=A1.tally(),bs={...sc};K.forEach(k=>sc[k]+=tl[k]);const n=done.flat().filter(x=>x).length+tl.total,ks=K.slice().sort((a,b)=>sc[b]-sc[a]),tops=ks.slice(0,2);
-let h=`<div class="hero">${M(64)}<h1>ぼくの大陸</h1></div><p class="sub">${n}ターン分の冒険から、いまのきみの<b>傾向</b>を地図にしました。あそぶほど、街や森が育っていくよ。旗が多いところは、よく出たちから。大きい・小さいに良い悪いはありません。${tl.total?`<br>🌱 「どうしようかな？」で選んだやり方（${tl.pn}場面ぶん）も入っているよ。`:''}</p>`+map(n)+`<button class="btn" onclick="openA()">🌱 「どうしようかな？」にもどる</button><p class="sub" id="vc" style="text-align:center">👆 場所をタップして、たんけんしよう（0 / 5）</p><div id="dlg"></div><div class="card"><b>🚩 旗の数（点数や順位じゃないよ）</b>`+ks.map(k=>`<div class="leg"><span>${P[k].e} ${P[k].l}（${P[k].n}）</span><b>${sc[k]}</b></div>`).join('')+`</div>`;
+let h=`<div class="hero">${M(64)}<h1>ぼくの大陸</h1></div><p class="sub">${n}ターン分の冒険から、いまのきみの<b>傾向</b>を地図にしました。あそぶほど、街や森が育っていくよ。旗が多いところは、よく出たちから。大きい・小さいに良い悪いはありません。${tl.total?`<br>🌱 「どうしようかな？」で選んだやり方（${tl.pn}場面ぶん）も入っているよ。`:''}</p>`+`<div id="mapw">${map(n)}</div><div id="cb">${cbar(LA)}</div><button class="btn" onclick="openA()">🌱 「どうしようかな？」にもどる</button><p class="sub" id="vc" style="text-align:center">👆 場所をタップして、たんけんしよう（0 / 5）</p><div id="dlg"></div><div class="card"><b>🚩 旗の数（点数や順位じゃないよ）</b>`+ks.map(k=>`<div class="leg"><span>${P[k].e} ${P[k].l}（${P[k].n}）</span><b>${sc[k]}</b></div>`).join('')+`</div>`;
 h+=`<h2 style="margin-top:20px">✨ 旗が多かった場所</h2><p class="sub">今回、たまたま多く出た場所だよ。日によって、場面によって、かわるよ。</p>`;tops.forEach(k=>{const p=P[k];h+=`<div class="card">${tip(k)}<h2>${p.l}</h2><p>${p.d}</p><b>ためしてみよう</b><ul style="padding-left:20px;margin:6px 0">${p.t.map(x=>`<li>${x}</li>`).join('')}</ul></div>`});
 h+=`<div class="card"><h2>🌈 十人十色。ちがうから、おもしろい</h2><p>この地図は「きみはこのタイプ」と決めるものじゃないよ。いま、どんなところに旗が立ちやすいか、という<b>傾向</b>を見ただけ。人の大陸は、ひとりひとり形もちがえば、旗の数もちがう。だから、友だちと話すのがおもしろいんだ。</p><p>5つの場所は、ぜんぶきみの中にあるよ。学校や友だちとのやりとりで、「自分らしくいられるやり方」と「相手に合わせるやり方」を使い分けられたら、きっと心強いね。</p><h3>👣 つぎの一歩</h3><p>気に入った場所の「ためしてみよう」を、今週ひとつだけやってみよう。うまくいかなくても大丈夫。やってみたことが、もう一歩だよ。パパやママ、友だちの「大陸」も、聞いてみてね。</p></div>
 <button class="btn" onclick="A2.menu()">📍 もどって、ほかのものがたりもやる</button><button class="btn" onclick="openA()">🌱 「どうしようかな？」でもっとためす</button><button class="btn" onclick="openC('t')">🎴 ちからカードのアルバム</button><button class="btn go" onclick="A2.init()">はじめから冒険する</button>`;
@@ -744,13 +749,22 @@ function tipCards(){const o=[];K.forEach(k=>P[k].t.forEach((x,i)=>o.push({id:"t"
 let vis=new Set();
 const VS={g:"⛰ ぼくは、ふかぼり山をのぼった。てっぺんからは遠くまで見わたせる。「なぜ？」の答えが、星みたいに光っているよ。",s:"🏰 ぼくは、ルールの城の大きな門をくぐった。広間には、地図や手じゅんの書かれた巻物がならんでいる。ここにいると安心できる。",a:"🏘 ぼくは、ひらめきの町に着いた。広場では、アイデアのランタンがぽんぽんと打ち上がっている！",n:"🌲 ぼくは、ゆっくりの森に入った。木もれ日の中で、川の音が聞こえる。急がなくても大丈夫。",m:"🏝 ぼくは、船でようすの島にわたった。灯台の光が、今日の気分をやさしく照らしている。"};
 const VE={g:"🌟",s:"📜",a:"🎆",n:"🍃",m:"💡"};
-function visit(k){vis.add(k);const p=P[k],d=document.getElementById('dlg');
-d.innerHTML=`<div class="card pop">${tip(k)}<h2>${p.l}</h2><p>${VS[k]}</p><button class="btn" id="tb">🎁 宝箱を開ける（カードがもらえるよ）</button><div id="tr"></div></div>`;
-document.getElementById('tb').onclick=function(){const un=[0,1].filter(i=>!tg.has('t'+k+i)),ix=un.length?un[Math.random()*un.length|0]:Math.random()*2|0,id='t'+k+ix,nw=tg.has(id)?0:1;tg.add(id);try{localStorage.setItem('tgt',JSON.stringify([...tg]))}catch(e){}document.getElementById('tr').innerHTML=`<div class="tip pop">${VE[k]} <b>宝もの：</b>${p.t[ix]}</div><button class="btn" onclick="Cd.show('${id}',${nw})">🎴 カードを大きく見る</button>`;this.remove();setTimeout(()=>Cd.show(id,nw),350)};
+const opn=k=>[...tg].filter(i=>i[1]==k).length;
+const stg=k=>SG(sc[k]+A1.tally()[k]);
+function openOne(k){const un=P[k].t.map((x,i)=>i).filter(i=>!tg.has("t"+k+i));if(!un.length)return null;const id="t"+k+un[Math.random()*un.length|0];tg.add(id);try{localStorage.setItem("tgt",JSON.stringify([...tg]))}catch(e){}return id}
+let LA={};
+const cbar=av=>{const t=K.reduce((a,k)=>a+av[k],0);return `<div class="card" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b style="flex:1;min-width:150px">🎁 あけられる宝箱：${t}こ<br><small style="font-weight:400;color:var(--sub)">場所がそだつごとに、宝箱が1こふえるよ</small></b><button class="btn go" style="width:auto;padding:10px 20px;margin:0" ${t?"":"disabled"} onclick="A2.openAll()">まとめて開く</button></div>`};
+function refresh(){const w=document.getElementById("mapw");if(!w)return;const tl=A1.tally(),bs={...sc};K.forEach(k=>sc[k]+=tl[k]);w.innerHTML=map(0);document.getElementById("cb").innerHTML=cbar(LA);Object.assign(sc,bs)}
+function openAll(){const got=[];K.forEach(k=>{let a=Math.max(0,stg(k)-opn(k));while(a-->0){const id=openOne(k);if(id)got.push(id)}});if(!got.length)return;refresh();
+const o=document.createElement("div");o.id="pu";o.className="pu";o.setAttribute("role","dialog");o.setAttribute("aria-modal","true");
+o.innerHTML=`<div class="pub"><h3>🎁 宝箱を ぜんぶ あけたよ！</h3><p class="pm" style="text-align:center">カードを ${got.length}まい ゲット！</p><div class="cg">${got.map(id=>`<button class="ct2" onclick="Cd.show('${id}',1)">${tip(id[1])}<span>${P[id[1]].t[+id[2]]}</span></button>`).join("")}</div><button class="pgo" onclick="document.getElementById('pu').remove()">とじる</button><button class="pg2" onclick="document.getElementById('pu').remove();openC('t')">ちからカードのアルバムを見る</button></div>`;document.body.appendChild(o)}
+function visit(k){vis.add(k);const p=P[k],d=document.getElementById('dlg'),av=Math.max(0,stg(k)-opn(k));
+d.innerHTML=`<div class="card pop">${tip(k)}<h2>${p.l}</h2><p>${VS[k]}</p>${av?`<button class="btn" id="tb">🎁 宝箱を開ける（あと${av}こ）</button>`:`<p class="sub">🎁 いま あけられる宝箱は ないよ。大陸が育つと、宝箱が ふえるよ。</p>`}<div id="tr"></div></div>`;
+const tb=document.getElementById('tb');if(tb)tb.onclick=function(){const id=openOne(k);if(!id)return;const ix=+id[2],left=av-1;document.getElementById('tr').innerHTML=`<div class="tip pop">${VE[k]} <b>宝もの：</b>${p.t[ix]}</div><button class="btn" onclick="Cd.show('${id}',1)">🎴 カードを大きく見る</button>${left?`<button class="btn" onclick="A2.visit('${k}')">つぎの宝箱を開ける（あと${left}こ）</button>`:""}`;this.remove();refresh();setTimeout(()=>Cd.show(id,1),350)};
 document.getElementById('vc').textContent=vis.size>=5?'🎉 大陸をぜんぶたんけんした！ すごい！（5 / 5）':`👆 場所をタップして、たんけんしよう（${vis.size} / 5）`;
 d.scrollIntoView({behavior:'smooth',block:'nearest'})}
 
-return {menu,turn,res,init,visit,intro,tipCards,pu,tnt,tgo,dr};})();
+return {menu,turn,res,init,visit,intro,tipCards,pu,tnt,tgo,dr,openAll};})();
 const Cd=(function(){
 const TC={f:"#f2994a",t:"#3f9b6e",m:"#ef6f8d",a:"#4f8fd8",s:"#9a82d6"},TN={f:"友だち",t:"先生",m:"おうちの人",a:"みんな",s:"じぶんの心"};
 function all(){const hc=A1.hintCards().map((c,i)=>({...c,n:i+1,c:TC[c.pt],k:"ヒントカード",s:"",f:TN[c.pt]}));
