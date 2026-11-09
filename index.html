@@ -136,17 +136,35 @@ section{min-height:100vh}
 #s2 .place:hover,#s2 .place:active{filter:brightness(1.12) drop-shadow(0 0 6px #fff)}
 #s2 .pop{animation:pp .35s ease-out}
 @keyframes pp{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+#s4{--bg:#f7f5fa;--card:#fff;--tx:#3a3440;--sub:#6f6a78;--ln:#e2dcea;--pc:#7a62b8;background:var(--bg);color:var(--tx);line-height:1.8}
+@media(prefers-color-scheme:dark){#s4{color-scheme:dark;--bg:#19171d;--card:#25222b;--tx:#ece8f2;--sub:#a59fb0;--ln:#38333f;--pc:#a891e0}}
+#s4 main{max-width:640px;margin:0 auto;padding:18px 14px 48px}#s4 h1{font-size:21px;margin:6px 0}#s4 h2{font-size:17px;margin:4px 0 6px}
+#s4 .card{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:14px 16px;margin:12px 0}#s4 .sub{color:var(--sub);font-size:13.5px}
+#s4 .btn{display:block;width:100%;font:inherit;text-align:center;background:var(--card);color:var(--tx);border:1.5px solid var(--ln);border-radius:12px;padding:11px;margin:10px 0;cursor:pointer}#s4 .go{background:var(--pc);color:#fff;border:0;font-weight:700}
+#s4 input{font:inherit;font-size:24px;letter-spacing:.5em;text-align:center;width:100%;padding:10px;border-radius:12px;border:1.5px solid var(--ln);background:var(--card);color:var(--tx)}
+#s4 .bd{display:inline-block;font-size:12px;font-weight:700;color:#fff;border-radius:999px;padding:1px 10px;margin-right:6px;white-space:nowrap;animation:none;background:var(--c)}
+#s4 .it{margin:6px 0;font-size:14.5px}#s4 .q{background:color-mix(in srgb,var(--pc) 9%,var(--card));border-radius:12px;padding:8px 12px;margin:10px 0 4px;font-size:14px}
+#s4 .br{height:10px;background:var(--ln);border-radius:9px;overflow:hidden;margin:2px 0 8px}#s4 .br i{display:block;height:100%;border-radius:9px;background:var(--c)}
+#s4 details{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:10px 14px;margin:10px 0}#s4 summary{cursor:pointer;font-weight:700}
+#s4 .nt{border-left:4px solid var(--pc);padding:2px 0 2px 10px;font-size:13.5px;color:var(--sub);margin:8px 0}
+#s4 .gg{display:flex;gap:4px;margin:8px 0 2px}#s4 .gg i{flex:1;height:16px;border-radius:8px;background:var(--ln)}#s4 .gg i.on{background:var(--pc);opacity:.45}#s4 .gg i.cu{opacity:1;box-shadow:0 0 0 2px var(--card),0 0 0 4px var(--pc)}#s4 .gl{display:flex;gap:4px;font-size:10.5px;color:var(--sub);text-align:center}#s4 .gl span{flex:1}
+.rsd{position:fixed;inset:0;background:rgba(0,0,0,.45);display:grid;place-items:center;padding:16px;z-index:99}.rsd>div{background:#fff;color:#3a3430;border-radius:20px;padding:20px 18px;max-width:420px;width:100%;max-height:90vh;overflow:auto;line-height:1.8;font:17px/1.8 -apple-system,"Hiragino Sans","Noto Sans JP",sans-serif}.rsd h2{margin:0 0 6px;font-size:19px}.rsd p{margin:6px 0}.rsd ul{margin:4px 0 8px;padding-left:20px}.rsd button{display:block;width:100%;font:inherit;border-radius:14px;padding:13px;margin:10px 0 0;cursor:pointer;border:1.5px solid #e0cdb8;background:#fff;color:#3a3430}.rsd .y{background:#e08a4a;color:#fff;border:0;font-weight:700}@media(prefers-color-scheme:dark){.rsd>div{background:#2a2622;color:#f0e9e1}.rsd button{background:#2a2622;color:#f0e9e1;border-color:#4a423b}.rsd .y{background:#e89a5c;color:#1d1a17}}
+.rsz{margin:84px 0 24px;padding-top:16px;border-top:1px dashed #cdbba5;text-align:center}.rsz p{margin:0;font-size:12px;color:#a89a8d}.rsb{background:none;border:0;color:#a89a8d;font-family:inherit;font-size:13px;text-decoration:underline;padding:10px 14px;cursor:pointer}@media(prefers-color-scheme:dark){.rsz{border-top-color:#4a423b}.rsz p,.rsb{color:#8a7f75}}
+#s2 .cont{font-size:19px;padding:18px 14px;margin:26px 0 12px;border-radius:18px;box-shadow:0 5px 0 color-mix(in srgb,var(--ac) 65%,#000);transition:transform .08s,box-shadow .08s}#s2 .cont:active{transform:translateY(3px);box-shadow:0 2px 0 color-mix(in srgb,var(--ac) 65%,#000)}
+#s2 .sec2{display:flex;gap:10px;margin:14px 0 0}#s2 .sec2 .btn{flex:1;margin:0;text-align:center;font-size:14px;line-height:1.5;padding:12px 8px;border-radius:14px;border-width:2px}
 </style></head><body>
 <section id="s0"><div class="tt-box"><div class="tt-art" id="ttl"></div><div class="tt-ui"><div class="tt-plate"><div class="tt-ribbon">えらんで、そだてる たんけん</div><h1><span class="t1">ぼくの大陸</span><span class="t2">ものがたり</span></h1></div><div class="tt-bottom"><button class="tt-go" onclick="start()">冒険をはじめる<span aria-hidden="true">▶</span></button><p>正解はないよ。つかれたら、いつでもやめていいよ。</p></div></div></div></section>
-<div id="hub" hidden><h1>🧭 ぼくの大陸ものがたり</h1><p class="lead">ふたつの冒険から、すきなほうをえらんでね。<br>どちらも、正解はないよ。つかれたら、いつでもやめていいよ。</p>
+<div id="hub" hidden><h1><span id="pk">🧭</span> ぼくの大陸ものがたり</h1><p class="lead">ふたつの冒険から、すきなほうをえらんでね。<br>どちらも、正解はないよ。つかれたら、いつでもやめていいよ。</p>
 <button class="door" onclick="openA()"><span class="e" style="background:#4a9d5b33">🌱</span><span><b>どうしようかな？</b><small>場面の中で相手と会話しながら、「こうしたらどうなるかな？」をためすゲーム（80場面）</small></span></button>
 <button class="door" onclick="openB()"><span class="e" style="background:#e08a4a33">🗺</span><span><b>ぼくのちからさがし</b><small>20のものがたりをえらんで、きみだけの「ぼくの大陸」の地図をつくる冒険</small></span></button>
 <button class="door" onclick="openC('all')"><span class="e" style="background:#e0a52633">🎴</span><span><b>カードコレクション</b><small id="cs"></small></span></button>
 <div class="note">どちらも「あなたはこのタイプ」と決めるものではありません。やり方はいろいろ。気になったことや迷ったことは、信頼できる大人（パパやママ）にも話してみてね。</div><div style="text-align:center;margin-top:14px"><button class="tbk" onclick="show('s0')">タイトルにもどる</button></div></div>
 <section id="s1" hidden><div class="back"><button onclick="hub()">🏠 えらぶ画面へ</button></div><div class="wrap" id="m1"></div></section>
 <section id="s3" hidden><div class="back"><button onclick="hub()">🏠 えらぶ画面へ</button></div><div id="m3"></div></section>
+<section id="s4" hidden><div class="back"><button onclick="hub()">🏠 とじる</button></div><main id="m4"></main></section>
 <section id="s2" hidden><div class="back"><button onclick="hub()">🏠 えらぶ画面へ</button></div><main id="m2"></main></section>
 <script>
+let QL={};try{QL=JSON.parse(localStorage.getItem("tgq")||"{}")}catch(e){}
 window.A1=(function(){
 
 // [絵文字,題,若葉,場面,最初のせりふ,ヒント,[[1手目,相手の返事,[[2手目,その後],[2手目,その後]]]×3]]
@@ -576,7 +594,7 @@ else g+=`<circle cx="78" cy="34" r="3" fill="#fff"/><circle cx="88" cy="26" r="5
 g+=prop(p,pt=="a"?82:100,pt=="a"?118:104);
 return `<svg viewBox="0 0 200 150" role="img" aria-label="${lab}のイラスト" style="width:100%;height:auto;display:block;border-radius:14px">${g}</svg>`}
 function hintCards(){return S.map((s,i)=>({id:"h"+i,pt:IL[i][1],e:ill(i),t:s[1],x:s[5],lv:s[2],own:cnt(i)>0}))}
-return {home,scene,turn2,end,tm,rmk,marks,askR,doR,askM,doM,setO,cards,settings,setLv,tally,sv,nb,hintCards,ill,illc,kid};})();
+return {home,scene,turn2,end,tm,rmk,marks,askR,doR,askM,doM,setO,cards,settings,setLv,tally,sv,nb,hintCards,ill,illc,kid,S,PL3,IL,FE,OF};})();
 window.A2=(function(){
 
 const M=(s=84)=>`<svg width="${s}" height="${s}" viewBox="0 0 100 100"><circle cx="50" cy="54" r="34" fill="#ffe0c2"/><path d="M16 50C18 18 82 18 84 50 70 38 30 38 16 50z" fill="#4a3a30"/><circle cx="39" cy="58" r="4.5" fill="#3a3430"/><circle cx="61" cy="58" r="4.5" fill="#3a3430"/><circle cx="31" cy="67" r="5" fill="#ff9d8a" opacity=".55"/><circle cx="69" cy="67" r="5" fill="#ff9d8a" opacity=".55"/><path d="M43 70q7 6 14 0" stroke="#3a3430" fill="none" stroke-width="3" stroke-linecap="round"/><rect x="62" y="82" width="30" height="16" rx="3" fill="#6a8fd0"/><text x="77" y="94" font-size="10" fill="#fff" text-anchor="middle">&lt;/&gt;</text></svg>`;
@@ -656,7 +674,7 @@ const pv=pickd[i][t];if(pv)document.querySelectorAll('#o .btn').forEach(b=>{if(p
 document.getElementById('ok').onclick=ok}
 const cntD=()=>done.flat().filter(x=>x).length;
 function ok(){const tl=A1.tally(),bf={...sc},nb=Math.max(1,cntD()+tl.total);
-const pv=pickd[si][ti];if(pv)pv.forEach(x=>sc[K[x]]--);pickd[si][ti]=[...sel];done[si][ti]=1;sel.forEach(x=>sc[K[x]]++);
+const pv=pickd[si][ti];if(pv)pv.forEach(x=>sc[K[x]]--);pickd[si][ti]=[...sel];done[si][ti]=1;sel.forEach(x=>sc[K[x]]++);try{QL[si+"-"+ti]=[...sel];localStorage.setItem("tgq",JSON.stringify(QL))}catch(e){}
 const na=Math.max(1,cntD()+tl.total),fl=(s,n,k)=>Math.min(3,1+Math.floor((s[k]+tl[k])/n*4));
 const ch=K.filter(k=>sc[k]>bf[k]).map(k=>({k,b:SG(bf[k]+tl[k]),a:SG(sc[k]+tl[k])}));
 if(!ch.length||!nt)return go();
@@ -735,7 +753,7 @@ function res(){vis=new Set();const tl=A1.tally(),bs={...sc};K.forEach(k=>sc[k]+=
 let h=`<div class="hero">${M(64)}<h1>ぼくの大陸</h1></div><p class="sub">${n}ターン分の冒険から、いまのきみの<b>傾向</b>を地図にしました。あそぶほど、街や森が育っていくよ。旗が多いところは、よく出たちから。大きい・小さいに良い悪いはありません。${tl.total?`<br>🌱 「どうしようかな？」で選んだやり方（${tl.pn}場面ぶん）も入っているよ。`:''}</p>`+`<div id="mapw">${map(n)}</div><div id="cb">${cbar(LA)}</div><button class="btn" onclick="openA()">🌱 「どうしようかな？」にもどる</button><p class="sub" id="vc" style="text-align:center">👆 場所をタップして、たんけんしよう（0 / 5）</p><div id="dlg"></div><div class="card"><b>🚩 旗の数（点数や順位じゃないよ）</b>`+ks.map(k=>`<div class="leg"><span>${P[k].e} ${P[k].l}（${P[k].n}）</span><b>${sc[k]}</b></div>`).join('')+`</div>`;
 h+=`<h2 style="margin-top:20px">✨ 旗が多かった場所</h2><p class="sub">今回、たまたま多く出た場所だよ。日によって、場面によって、かわるよ。</p>`;tops.forEach(k=>{const p=P[k];h+=`<div class="card">${tip(k)}<h2>${p.l}</h2><p>${p.d}</p><b>ためしてみよう</b><ul style="padding-left:20px;margin:6px 0">${p.t.map(x=>`<li>${x}</li>`).join('')}</ul></div>`});
 h+=`<div class="card"><h2>🌈 十人十色。ちがうから、おもしろい</h2><p>この地図は「きみはこのタイプ」と決めるものじゃないよ。いま、どんなところに旗が立ちやすいか、という<b>傾向</b>を見ただけ。人の大陸は、ひとりひとり形もちがえば、旗の数もちがう。だから、友だちと話すのがおもしろいんだ。</p><p>5つの場所は、ぜんぶきみの中にあるよ。学校や友だちとのやりとりで、「自分らしくいられるやり方」と「相手に合わせるやり方」を使い分けられたら、きっと心強いね。</p><h3>👣 つぎの一歩</h3><p>気に入った場所の「ためしてみよう」を、今週ひとつだけやってみよう。うまくいかなくても大丈夫。やってみたことが、もう一歩だよ。パパやママ、友だちの「大陸」も、聞いてみてね。</p></div>
-<button class="btn" onclick="A2.menu()">📍 もどって、ほかのものがたりもやる</button><button class="btn" onclick="openA()">🌱 「どうしようかな？」でもっとためす</button><button class="btn" onclick="openC('t')">🎴 ちからカードのアルバム</button><button class="btn go" onclick="A2.init()">はじめから冒険する</button>`;
+<button class="btn go cont" onclick="A2.menu()">🌱 ちからさがしをつづける</button><div class="sec2"><button class="btn" onclick="openA()">🌱 「どうしようかな？」<br>でもっとためす</button><button class="btn" onclick="openC('t')">🎴 ちからカード<br>のアルバム</button></div><div class="rsz"><p>さいしょからやりなおしたいときだけ</p><button class="rsb" onclick="rsAsk()">はじめから冒険する</button></div>`;
 Object.assign(sc,bs);app.innerHTML=h;scrollTo(0,0)}
 let tg=new Set();try{tg=new Set(JSON.parse(localStorage.getItem("tgt")||"[]"))}catch(e){}
 function tip(k){const sk='<rect width="200" height="150" fill="#cfeaff"/>',L={
@@ -764,7 +782,7 @@ const tb=document.getElementById('tb');if(tb)tb.onclick=function(){const id=open
 document.getElementById('vc').textContent=vis.size>=5?'🎉 大陸をぜんぶたんけんした！ すごい！（5 / 5）':`👆 場所をタップして、たんけんしよう（${vis.size} / 5）`;
 d.scrollIntoView({behavior:'smooth',block:'nearest'})}
 
-return {menu,turn,res,init,visit,intro,tipCards,pu,tnt,tgo,dr,openAll};})();
+return {menu,turn,res,init,visit,intro,tipCards,pu,tnt,tgo,dr,openAll,ST,P};})();
 const Cd=(function(){
 const TC={f:"#f2994a",t:"#3f9b6e",m:"#ef6f8d",a:"#4f8fd8",s:"#9a82d6"},TN={f:"友だち",t:"先生",m:"おうちの人",a:"みんな",s:"じぶんの心"};
 function all(){const hc=A1.hintCards().map((c,i)=>({...c,n:i+1,c:TC[c.pt],k:"ヒントカード",s:"",f:TN[c.pt]}));
@@ -810,8 +828,143 @@ ${P("m",306,612,.62)}${boat(48,612,0)}${boat(160,630,1.2)}
 <g class="bob"><g transform="translate(${bx} ${by+52}) scale(1.1) translate(${-bx} ${-(by+52)})"><rect x="${bx-21}" y="${by+16}" width="13" height="24" rx="5" fill="#e0a526"/>${A1.kid(bx,by,1,"#4a3320","#5aa9e6","s","w")}<path d="M${bx-19} ${by-6}q19-20 38 0z" fill="#e08a4a"/><rect x="${bx-22}" y="${by-8}" width="44" height="4" rx="2" fill="#c8693a"/><circle cx="${bx}" cy="${by-17}" r="3" fill="#ffd95a"/><g class="wave" style="transform-box:fill-box;transform-origin:0% 100%"><path d="M${bx+10} ${by+24}l9-9" stroke="#5aa9e6" stroke-width="9" stroke-linecap="round"/><path d="M${bx+19} ${by+15}l9-12" stroke="#ffe0c2" stroke-width="6" stroke-linecap="round"/><circle cx="${bx+29}" cy="${by+2}" r="5" fill="#ffe0c2"/></g></g></g>
 ${sp(40,430,1.2,0)}${sp(330,520,1,.8)}${sp(200,420,.9,1.6)}${sp(60,600,1,.4)}${sp(300,380,.8,1.2)}</g>
 </svg>`}
-function show(id){["s0","hub","s1","s2","s3"].forEach(x=>document.getElementById(x).hidden=x!==id);scrollTo(0,0)}
+function show(id){["s0","hub","s1","s2","s3","s4"].forEach(x=>document.getElementById(x).hidden=x!==id);scrollTo(0,0)}
 function hub(){show("hub");Cd.prog()}
 function openA(){show("s1");A1.home()}
 Cd.prog();document.getElementById("ttl").innerHTML=titleArt();let b2=0;function openB(){show("s2");b2?A2.menu():(b2=1,A2.init())}
+/* ===== 保護者モード（かくし入口：ホーム画面の🧭を5秒以内に7回タップ → 暗証番号） ===== */
+const PT={g:{e:"🔭",n:"ギフティッド的",c:"#d99a1c",d:"理由や意味に納得したい、深く調べたい、公平さや正しさにこだわる。場面や相手によって様子が変わり、手ごたえのある課題だと粘り強い。人の気持ちはよく分かるぶん、悩むこともある。",s:"理由・深さ・納得への関心が背景"},
+s:{e:"🧩",n:"ASD的",c:"#3f9a8a",d:"見通し・順番・具体的な言葉があると安心して力が出る。あいまいな指示、急な変更、表情や空気などの非言語の読み取りでとまどいやすい。決まりを誠実に守る。",s:"見通し・具体性・型があると安心する背景"},
+a:{e:"⚡",n:"ADHD的",c:"#5b84cc",d:"注意や気持ちが素早く動く。興味や難しさが同じでも取り組みにムラがあり、いったんそれると戻るのに時間がかかる。自分では気づきにくい。好きなことには強く集中する。",s:"注意の動き・ムラ・切りかえの背景"},
+n:{e:"🐢",n:"慎重・おっとり（特性とは別）",c:"#8a7ac0",d:"じっくり確かめて進める個性。ギフティッドや発達の特性とは関係なく、多くの子に見られる自然な持ち味。",s:"個性としての慎重さ"},
+m:{e:"🌤",n:"その日の状態（特性とは別）",c:"#d0788a",d:"体調・気分・まわりの状況で反応が変わる。どの子にもあり、特性の見分けには使えない、その日のコンディション。",s:"その日の体調・気分による変化"}};
+const SN=["同じ「緊張する発表」でも、仕組みを語りたい(G)・順番があると安心(S)・話が浮かび続ける(A)で背景が違います。","バグ直し：原因の追究(G)、手順どおり(S)、すぐ試して切りかえる(A)。粘り方の「形」に差が出やすい場面。","友だちとのルール：理由と公平さ(G)、入り方の型や気持ちの読み取り(S)、勢いが先に出る(A)。","切りかえの場面：理由で納得(G)、予告・約束の時間で安心(S)、あと少しと注意が戻りにくい(A)。","気持ちの揺れ方：考え続ける(G)、いつもと違うで揺れる(S)、切りかえは早いが覚えにくい(A)。","見通しの場面：わけを知りたい(G)、しおり・予定で安心(S)、気持ちが先に動く(A)。","共同作業：仕組みへのこだわり(G)、順番と役割(S)、アイデアが次々(A)。","関わり方の場面：深く受け止めて悩む(G)、どう関わるか型が必要(S)、気づいても注意が移る(A)。","取りかかり：意味が見える(G)、順番が決まっている(S)、始めにくさやムラ(A)。","初めての場面：先を想像して考える(G)、予定が分かれば安心(S)、期待で気持ちが走る(A)。","行事の流れ：納得(G)、流れの把握(S)、勢いや気の散りやすさ(A)。","役割の場面：やり方の工夫(G)、手順の明確さ(S)、途中で別へ(A)。","アイデアの扱い：深めたい(G)、整理したい(S)、次々広がる(A)。","人に見てもらう場面：仕組みの説明(G)、説明書や型(S)、その場で直したくなる(A)。","チーム作業：意見の理由(G)、役割の分担(S)、ひらめき先行(A)。","相手の気持ちを考える場面：深く考える(G)、型や聞き方が必要(S)、気持ちが先に出る(A)。","予定の場面：先を知りたい(G)、予定の見通し(S)、気持ちの先走り(A)。","家事の取りかかり：意味や工夫(G)、手順の見える化(S)、途中で別へ(A)。","うれしい気持ち：深く味わう(G)、どう表すか迷う(S)、すぐ次へ向かう(A)。","くやしい気持ち：原因を考える(G)、いつもと違うで揺れる(S)、切りかえは早い(A)。"];
+const KO=["g","s","a","n","m"];
+let pt=[];const ph=x=>{let h=5381;for(const c of x)h=(h*33+c.charCodeAt(0))>>>0;return""+h};
+const m4=()=>document.getElementById("m4");
+function gk(){try{return localStorage.getItem("tgk")}catch(e){return null}}
+document.getElementById("pk").onclick=()=>{const n=Date.now();pt=pt.filter(t=>n-t<5000);pt.push(n);if(pt.length>=7){pt=[];pgate()}};
+function pgate(msg){show("s4");const has=gk();m4().innerHTML=`<h1>🔒 保護者の方へ</h1><div class="card"><p class="sub">${has?"4けたの暗証番号を入力してください。":"はじめての設定です。4けたの数字を決めてください（お子さまには教えないでください）。"}</p><input id="pn" type="password" inputmode="numeric" maxlength="4" autocomplete="off" aria-label="暗証番号"><p class="sub" style="color:#c0584a">${msg||""}</p><button class="btn go" id="pg">${has?"ひらく":"この番号にする"}</button><button class="btn" onclick="hub()">やめる</button></div>`;
+document.getElementById("pg").onclick=()=>{const v=document.getElementById("pn").value;if(!/^\d{4}$/.test(v))return pgate("数字4けたで入力してください");if(!has){try{localStorage.setItem("tgk",ph(v))}catch(e){}return pview()}if(ph(v)===has)pview();else pgate("番号がちがいます")}}
+const DM=["友だち","学校・先生","おうち","好きなこと・集団","自分の気もち"],CD=[1,3,0,2,4],AD={f:0,t:1,m:2,a:3,s:4};
+const DS=["会話の入り方・断り方・「ありがとう」などの型を、言葉にして一緒に練習すると伝わりやすい。表情や空気は「言葉で教える」のがコツ。","指示は具体的に（「静かに」より「えんぴつを持って3問目」）。全体への声かけが自分にも向いていることを教え、予定は紙で見えるようにする。","予定の変更は前もって予告し、切りかえは「あと5分」の合図で。手順を絵や紙で見える化すると安心しやすい。","好きなことの時間を守りつつ、終わりの合図を決める。にぎやかな場では、静かに休める場所や耳を休める道具を選べるようにする。","気持ちは「選ぶカード」で言葉にする練習を。体調や気持ちを数字や絵で伝える方法も役立つ。"];
+const LV=["とても少なめ","少なめ","平均的","やや多め","多め"];
+const LT=["資料にある「ASDで見られやすい反応」は、あまり選ばれていません。場面に合わせて動けていることが多い様子です。","資料にある反応が選ばれることは、そう多くない様子です。","資料にある反応は、偶然とほぼ同じ程度で、特に偏りは見えません。","資料にある反応が、いくつかの場面で見られます。見通し・具体的な言葉・型が助けになりそうです。","資料にある反応が、広い範囲の場面で見られます。見通し・具体的な言葉・型が助けになる場面が多そうです。まず「助けが役立ちやすい場面」から試してみてください。"];
+/* 「どうしようかな？」80場面 → [資料(ASD特徴1)の実例番号, ASD的な反応の選択肢(0〜2) / -1=対応なし] */
+const AM=[[1,0],[24,0],[29,0],[23,0],[13,0],[22,0],[50,0],[49,0],[26,0],[34,0],[69,-1],[51,0],[15,0],[19,0],[21,-1],[31,0],[38,0],[47,0],[52,0],[53,0],[63,0],[70,0],[78,0],[79,0],[3,0],[4,1],[11,0],[27,0],[36,0],[74,0],[44,0],[54,0],[75,0],[68,-1],[77,0],[40,0],[5,0],[7,0],[8,1],[12,0],[18,0],[39,0],[41,0],[60,-1],[61,0],[14,-1],[37,0],[67,0],[6,0],[33,0],[55,0],[59,0],[64,0],[65,0],[72,-1],[28,-1],[76,0],[2,0],[9,0],[10,0],[16,0],[30,0],[32,0],[42,0],[43,0],[45,-1],[46,0],[48,0],[56,0],[57,0],[68,-1],[62,0],[71,0],[17,0],[20,0],[25,-1],[28,0],[35,0],[66,0],[80,0]];
+const AP=new Set([]);
+const E={
+1:["相手の退屈サイン（あくび・時計）を読み取りにくく、会話が一方通行になりやすい","タイマーなど数字で「次は相手の番」と伝える"],
+2:["泣いている人を見て、痛みを直感的に結びつける共感反応が働きにくい","後で静かに「転んだ＝痛い＝『大丈夫？』」と状況と行動をセットで教える"],
+3:["あいまいな質問だと、どの記憶を出せばよいか迷う","「ブランコ？砂場？」など2択で具体的に聞く"],
+4:["「見て！」と関心を共有する気持ちが働きにくい","「ここに青を使ったんだね」と具体的に実況してほめる"],
+5:["注意の切り替えが苦手で、呼びかけが届かない","視界に入って肩をたたき、「1分ストップできる？」と声をかける"],
+6:["周りの笑いの場面を察する速さに違いがある","「さっきの言い間違いで笑ったんだよ」と理由を解説する"],
+7:["連想が広がり、浮かんだ話を言わずにいられない","「先に質問に答えてね。そのあと聞くよ」と順番を示す"],
+8:["感情を言葉にして伝える回路が不器用","親が「うれしい顔だね」と気持ちを言葉にして返す"],
+9:["「熱がある＝ご飯を作れない」という裏の文脈を想像しにくい","事実を淡々と伝え、具体的な選択肢を渡す"],
+10:["自分の「正解イメージ」への強い固執と、違う意見への不安","前もって「通らないこともあるのがルール」と見通しを示す"],
+11:["手を振る動作と「別れのあいさつ」の意味が結びつきにくい","手を取って一緒に振り、体で覚える"],
+12:["興味の枠外のものに注意が向きにくい","親が「〇〇くんのも面白いね」と間に入り、少しずつ広げる"],
+13:["あいさつの社会的な意味が見えにくい","「言われたら同じ言葉を返す」とルールにする"],
+14:["ため息や困り顔など非言語のサインを読み取る回路の弱さ","「重いから開けて」と100%言葉で頼むルールにする"],
+15:["どう返すのが正解か分からず、頭が処理落ちする","「ありがとう」だけ言えばよいと最短のセリフを渡す"],
+16:["「心のやり取り」ではなく自分の知識の出力になりやすい","1文話したら「どう思う？」と聞く型を教える"],
+17:["助けを求めるスキルが未発達で、一人で抱え込む","無理に引き出さず、安心して落ち着ける場所を用意する"],
+18:["「どうぞ」に込められた好意の文脈が分かりにくい","「どうぞ→ありがとう」をロールプレイで練習する"],
+19:["会話の「終わりの儀式」が登録されていない","「じゃあね」と言ってから行く型を教える"],
+20:["自分と好きなものの境界があいまいで、批判を自分への攻撃と感じる","「悲しかったね」と共感し、「いろんな好きがあっていい」と伝える"],
+21:["言葉を文字どおりに処理し、裏の意図（皮肉・お世辞）を読み取りにくい","裏の意味は「これはこういう意味だよ」と解説する"],
+22:["「言われなければ動かない」まじめさと、困りサインを察しにくさ","「手伝おうか？」と自分から聞いてよいと教える"],
+23:["重い空気の中で、どの言葉でどう謝ればよいか分からず固まる","「まず『ごめんなさい』だけで100点」と最短ルートを教える"],
+24:["輪に入る手順やタイミングをはかるのが不器用","「入れて」をカードやごっこ遊びで練習する"],
+25:["「味方か敵か」の白黒思考と、友達の多様な関係を想像しにくさ","関係を図に描いて「他の子とも話すよ。あなたも大好き」と伝える"],
+26:["勝った興奮と、負けた相手の悔しさを想像する力の弱さが重なる","「いい勝負だったね」を勝った時のマナーとして教える"],
+27:["失敗した人への反応と、相手の悲しさへの共感がずれる","責めずに「笑わず『大丈夫？』と助けるのがルール」と伝える"],
+28:["体の感覚をとらえにくく、助けを求めるのも不器用","体調チェックシートで「どこがどんなふうに」を選ぶ練習をする"],
+29:["断る時のクッション言葉をとっさに作れず、無視で回避する","断りの短い定型文を渡して練習する"],
+30:["白黒思考で「間違い＝全部悪い」と感じ、理由を正確に説明したいこだわりもある","「理由の前に『ごめんなさい』」と順番を示す"],
+31:["相手が共感を求めている文脈を読めず、事実をそのまま言う","自慢された時は「すごいね」と言う型を教える"],
+32:["遊びの「思い通りにならない不確実さ」への強い不安","「最初の10分は〇〇くんが決める番」とタイマーで交代制にする"],
+33:["素直に認めることへの劣等感と、相手の誇らしさを推測しにくさ","「友達ががんばったら『すごいね』と拍手」と教え、本人の得意も認める"],
+34:["相手の手の動きなど非言語の「忙しい」サインを読み取りにくい","手が止まった時に「今話せる？」と聞くルールにする"],
+35:["怒られた怖さで「すみません」と言うが、原因の理解が追いつかない","何がダメで、どうすればよかったかを紙に書いて1つずつ伝える"],
+36:["「友達を招く＝一緒に楽しむ」という文脈の理解不足と過集中","来る前に遊ぶものを決め、おもてなしの手順を示す"],
+37:["複数の会話が負担になり、意識のシャッターを下ろして自分を守っている","無理に輪に入れず、静かに過ごしてよいと認める"],
+38:["他人の変化より、自分の好きな部分に注意が向きやすい","「髪切った？」が友達の喜ぶ会話のきっかけと教える"],
+39:["過去の事実への固執と、言われた相手の傷つきを想像しにくさ","「終わった話は蒸し返さない」とルールにする"],
+40:["「後でね」に含まれる断りの社交辞令を読み取りにくい","時間が決まっていない「後で」は仮の約束と教える"],
+41:["自分のペース（ルーティン）へのこだわりと、合わせる柔軟性の弱さ","断ったこと自体を認め、「また今度ね」の言い方を教える"],
+42:["欲しい気持ちに対し、「貸して」と言う手順が省略されやすい","その場で止めて「かーしーて」と言う練習をする"],
+43:["強い所有へのこだわりと、「消えてしまう」という過剰な不安","「終わったら戻ってくるよ」と貸し借りの考え方を教える"],
+44:["場に合わせた表情・ポーズづくりの不器用さ","「イーの口」「ピース」など具体的な形で指示する"],
+45:["白黒思考で、他の子がほめられる＝自分はだめ、と飛躍しやすい","「あなたの〇〇も素敵」と、人の評価と自分は別だと伝える"],
+46:["自分の行動を客観視する力の弱さと、非を認めると全否定される怖さ","紙に時系列を描き、友達と自分の視点を整理して見せる"],
+47:["「秘密」の意味（言うと困る）の理解不足と、思ったことをすぐ言う衝動","「秘密＝お口にカギ」と具体的なルールで教える"],
+48:["相手が本気で嫌がるサインを読み取りにくい","「『やめて』と言われたらすぐ止める」を絶対ルールにする"],
+49:["内面の事実をそのまま出す正直さ（社会的なフィルターの弱さ）","まず「ありがとう」と言うことをルールにする"],
+50:["励ます行動の型がなく、不安で逃げてしまう","「大丈夫？」と1回聞くだけで100点と短いフレーズを渡す"],
+51:["負け＝全否定の白黒思考と、自分のルール認識への絶対的なこだわり","ルールを紙に書いて見せ、「ここにあるよ」と修正を助ける"],
+52:["「みんなへの指示」が自分も含むと捉えにくい","「静かに」と言われたら、自分も口を結ぶのがルールと教える"],
+53:["話題の切り替えをリアルタイムでとらえるのに時間がかかる","「今は〇〇の話に変わったよ」と優しく言葉で知らせる"],
+54:["「聞かれて嫌な領域」というプライベートの境界の概念がまだ薄い","「家族やお金のことは聞かない」と質問NGリストを教える"],
+55:["知識を出したい欲求と、言い方が偉そうに聞こえることの推測しにくさ","「〇〇だよ」と優しい言い回しを具体的に練習する"],
+56:["負けや不快に耐える感情の調整が難しく、リセットで消したくなる","途中でやめたらおしまい、と先に決め、最後までやれた態度をほめる"],
+57:["困惑や体調不良で頭が混乱し、気持ちを言葉にできなくなる","口頭で追い詰めず、選択肢カードや2択で聞く"],
+59:["説教という刺激から、特定の視覚刺激に注意を固定して身を守る","説教は短く1つの理由だけ、紙に書いて伝える"],
+61:["相手の眉や口元など、非言語の拒絶サインを読み取りにくい","「眉が寄っているよ。『やめてほしい』のサイン」と言葉で翻訳する"],
+62:["傷つくのを防ぐ防衛と、「誰と組むか」への関心の薄さ","「緊張するよね」と受け止め、出席番号など機械的に決める配慮を頼む"],
+63:["相手の優しさ（意図）ではなく、「頼んだか」という事実で返してしまう","「頼んでなくても、気持ちに『ありがとう』」と教える"],
+64:["注意を引きたい気持ちが言葉でなく体で出る。力加減もつかみにくい","手を止め、「ねえねえ」と声で呼ぶ代わりの行動を教える"],
+65:["「同じ見た目＝ぼくの物」と同一視し、所有の考え方が分かりにくい","名前シールなど客観的な目印で線引きを教える"],
+66:["「意見の違い＝嫌い」と白黒で捉え、自分と他人の分離がまだ未熟","「味が違うのと同じで、考えが違うだけ」と図で教える"],
+67:["状況をまとめて説明する力と、どこまで詳しく話すかの推測しにくさ","「いつ、どこで、だれと？」と5W1Hで具体的に聞く"],
+68:["「仲良く」のような抽象語を、具体的な行動に置き換えにくい","「叩かない」「『貸して』と言う」など行動を1つずつに分けて伝える"],
+69:["社交辞令を言葉どおりの100%の約束として記憶しやすい","日時が決まっていない「また今度」は挨拶と教える"],
+70:["興味のない対象に反応が出にくく、聞くふりの作法が不器用","「へえ、かわいいね」と相づちを打つ型を教える"],
+71:["沈黙の意味（引きつり・困惑）を読み取りにくく、緊張で笑ってしまうこともある","「みんなが黙ったら『まずかったかな？』と一言」を教える"],
+74:["正論（事実）にこだわり、傷ついた相手への配慮を忘れやすい","「傷ついている人には『大丈夫？』」と正しい型を教える"],
+75:["「自分が共感できない＝価値がない」と素直に出してしまう","「楽しいんだね」と相づちを打つ話のルールを教える"],
+76:["声のトーンから怒りを読み取る働きがとらえにくい","「声が低い時は怒っているから近寄らない時間」と言葉で伝える"],
+77:["自分の作業への過集中と、貸し借りのやり取りを計算しにくい","「あと10分使ったら代わるね」と終わりの時間を言って貸す"],
+78:["みんなの喜びに体の動き（笑顔・拍手）を合わせにくい","「みんなが喜んだら一緒に拍手」と体の型を教える"],
+79:["教えてくれた好意ではなく、「知っているか」という事実だけで答える","「知っていても『教えてくれてありがとう』」と感謝の型を伝える"],
+80:["意見の否定＝自分の全否定と飛躍し、感情のブレーキが効きにくい","落ち着くまで離れ、「意見が違うことと、あなたがダメなことは別」と伝える"]};
+function a1d(){let p={},r={};try{p=JSON.parse(localStorage.getItem("tgp")||"{}")}catch(e){}try{r=JSON.parse(localStorage.getItem("tgr")||"{}")}catch(e){}return{p,r}}
+const bdg=k=>`<span class="bd" style="--c:${PT[k].c}">${PT[k].e} ${PT[k].n}</span>`;
+function pview(){const ST2=A2.ST,A=A1.S,IL=A1.IL,FE=A1.FE,OF=A1.OF,{p,r}=a1d();
+const c={g:0,s:0,a:0,n:0,m:0};let tot=0,n1=0;
+Object.keys(QL).forEach(k=>{const v=QL[k],st=ST2[+k.split("-")[0]];if(!v||!v.length||!st)return;n1++;v.forEach(x=>{c[KO[x]]++;tot++})});
+const dm=DM.map(()=>({s:0,all:0}));let aN=0,aS=0,n2=0;
+Object.keys(p).forEach(i=>{const v=p[i];if(!A[i]||!v||!v.length)return;n2++;const ai=AM[i][1];if(ai<0)return;const d=AD[IL[i][1]]??4;v.forEach(j=>{aN++;dm[d].all++;if(j==ai){aS++;dm[d].s++}})});
+let h=`<h1>👪 保護者モード</h1><div class="card"><b>この画面について</b><p class="sub" style="margin:4px 0 0">お子さまが「どうしようかな？」「ぼくのちからさがし」で選んだ反応を解説します。「どうしようかな？」の解説は、資料「ASD【特徴1】対人的・情緒的相互関係の困難さ 実例80選」に沿っています。<b>診断や判定ではありません</b>。同じ行動でも背景はちがい、傾向は重なることもよくあります。お子さんの得意と、楽になる関わり方を見つける手がかりにしてください。</p></div>`;
+if(!aN&&!tot)h+=`<div class="card">まだ記録がありません。お子さまがアプリで選ぶと、ここに表示されます。</div>`;
+h+=`<div class="card"><h2>🧩 ASD的な反応の出かた（「どうしようかな？」）</h2>`;
+if(aN<8)h+=`<p class="sub">選ばれた回数がまだ ${aN} 回と少ないため、程度の目安は出していません（8回以上で表示します）。</p>`;
+else{const ratio=3*aS/aN,lv=ratio<.5?0:ratio<.9?1:ratio<1.3?2:ratio<1.8?3:4;
+h+=`<p style="margin:2px 0"><b>資料にある反応が選ばれた割合：${LV[lv]}</b></p><div class="gg">${LV.map((x,i)=>`<i class="${i<=lv?"on":""} ${i==lv?"cu":""}"></i>`).join("")}</div><div class="gl">${LV.map(x=>`<span>${x}</span>`).join("")}</div><p>${LT[lv]}</p><p class="sub">資料にある反応（ASDの実例に近い選択）は ${aS} 回（選ばれた ${aN} 回のうち。偶然ならおよそ ${(aN/3).toFixed(1)} 回）。</p>`}
+h+=`<p class="nt">各場面の選択肢のうち1つが、資料の実例の行動（例：好きな話をやめられない、断れず黙る、言葉どおりに受け取る）にあたります。これは「ASDの程度そのもの」ではなく、選ばれた反応のかたよりから見た<b>「どんな場面で手助けが役立ちそうか」</b>の目安です。選択肢は何度も試せるので、数回で決めつけず、続けて見てください。</p></div>`;
+if(aN){const hi=dm.map((d,i)=>({...d,i})).filter(d=>d.all>=3&&d.s>=2&&d.s/d.all>.43).map(d=>d.i);
+h+=`<div class="card"><h2>📍 どんな場面で出ているか</h2>`+dm.map((d,i)=>`<div style="--c:${PT.s.c}"><b>${DM[i]}</b>　ASD的 ${d.s} / ${d.all}回${hi.includes(i)?"　⭐助けが役立ちやすい場面":""}<div class="br"><i style="width:${d.all?d.s/d.all*100:0}%"></i></div></div>`).join("")+(hi.length?`<p class="nt"><b>関わりのヒント</b><br>${hi.map(i=>`・${DM[i]}：${DS[i]}`).join("<br>")}</p>`:`<p class="nt">ほかの場面にくらべて、とくに目立つ場面はまだ見えていません。</p>`)+`</div>`}
+const rk=Object.keys(r).filter(i=>r[i]&&(r[i].b!=null||r[i].o!=null)),bu=rk.filter(i=>r[i].b==5).length,ou=rk.filter(i=>r[i].o==4).length,nb=rk.filter(i=>r[i].b!=null).length,no=rk.filter(i=>r[i].o!=null).length;
+if(nb||no)h+=`<div class="card"><h2>💭 気持ちのことば（ふりかえりノート）</h2><p class="it">自分の気持ちを「よく分からない」と選んだ：${bu} / ${nb}回<br>相手の気持ちを「分からない」と選んだ：${ou} / ${no}回</p><p class="nt">自分や相手の気持ちを言葉にする・想像するのが難しい場合、資料では特性のひとつとして触れられています（感情をことばにする回路の不器用さなど）。ただ、年齢相応にまだ言葉にならないこともあり、これだけでは決められません。「気持ちカード」から選ぶ練習が助けになります。</p></div>`;
+if(tot){h+=`<div class="card"><h2>📊 「ぼくのちからさがし」の傾向（選ばれた ${tot} 回）</h2>`+KO.map(k=>`<div style="--c:${PT[k].c}"><b>${PT[k].e} ${PT[k].n}</b>　${c[k]}回（${Math.round(c[k]/tot*100)}%）<div class="br"><i style="width:${c[k]/tot*100}%"></i></div></div>`).join("")+`<p class="nt">3つの傾向は重なって見られることも多く、割合の大小だけで決められません。（${n1}ターン分）</p></div>`}
+h+=`<div class="card"><h2>🔍 3つの傾向の見分けの軸</h2>`+["g","s","a"].map(k=>`<div class="it">${bdg(k)}${PT[k].d}</div>`).join("")+`<p class="nt">見分けのポイント：①場面で変わるか（ギフティッド）／場面を問わずムラがあるか（ADHD）／見通しや具体性で楽になるか（ASD）　②本人に理由や意図があるか（ギフティッド）／本人も気づきにくいか（ADHD）　③気持ちは分かるのに悩むか（ギフティッド）／読み取りに型が必要か（ASD）</p></div>
+<div class="card"><h2>🧭 あとの2つについて</h2>`+["n","m"].map(k=>`<div class="it">${bdg(k)}${PT[k].d}</div>`).join("")+`</div>`;
+h+=`<h2 style="margin-top:20px">🌱 「どうしようかな？」場面ごとの分析</h2><p class="sub">選んだやり方が、資料の実例に近い反応かどうかを示します。近い反応には、資料にある背景と関わり方を添えています。</p>`;
+const ids=Object.keys(p).filter(i=>A[i]&&p[i]&&p[i].length).map(Number).sort((x,y)=>x-y);
+if(!ids.length)h+=`<p class="sub">まだ記録がありません。</p>`;
+ids.forEach(i=>{const s=A[i],en=AM[i][0],ai=AM[i][1],e=E[en],rr=r[i];
+h+=`<details><summary>${s[1]}　<span class="sub">資料の実例${en}</span></summary><div class="q">${s[3]}</div>`+p[i].map(j=>{const o=s[6][j];if(!o)return"";const asd=ai>=0&&j==ai;
+return `<div class="it">${asd?`<span class="bd" style="--c:${PT.s.c}">🧩 ASD的な反応${AP.has(i)?"（近い）":""}</span>`:`<span class="bd" style="--c:#8a8494">${ai<0?"判定に使わない":"ほかの反応"}</span>`}「${o[0]}」<br><span class="sub">→ ${o[1]}</span>`+(asd?`<div class="nt">資料の実例${en}に近い反応です。<br><b>背景：</b>${e[0]}<br><b>関わり方：</b>${e[1]}</div>`:ai>=0?`<div class="nt">資料の実例${en}の反応（「${s[6][ai][0]}」）とは別の選び方です。身につけたい型、または個性・その日の調子など別の背景として見ます。</div>`:`<div class="nt">この場面は、選択肢と資料の実例がはっきり対応しないため、傾向の数には入れていません。</div>`)+`</div>`}).join("")+(rr&&(rr.b!=null||rr.o!=null)?`<div class="nt">ふりかえり：はじめの気もち ${rr.b!=null?FE[rr.b][1]:"—"}／相手の気もち予想 ${rr.o!=null?OF[rr.o][1]:"—"}</div>`:"")+`<p class="nt">💡 ${s[5]}</p></details>`});
+const sx=ST2.map((st,i)=>[0,1,2,3].filter(j=>QL[i+"-"+j]&&QL[i+"-"+j].length).length?i:-1).filter(i=>i>=0);
+h+=`<h2 style="margin-top:20px">🗂 「ぼくのちからさがし」場面ごとの分析</h2><p class="sub">答えのあった場面だけを表示します。選択肢は複数選べるので、複数の傾向が出ることもあります。</p>`;
+if(!sx.length)h+=`<p class="sub">まだ記録がありません。</p>`;
+sx.forEach(i=>{const st=ST2[i],t=[0,1,2,3].filter(j=>QL[i+"-"+j]&&QL[i+"-"+j].length);
+h+=`<details><summary>${st[1]}　<span class="sub">${t.length} / 4ターン</span></summary><p class="nt">${SN[i]||""}</p>`+t.map(j=>{const q=st[3][j];return `<div class="q">ターン${j+1}　${q[1]}</div>`+QL[i+"-"+j].slice().sort().map(x=>{const k=KO[x];return `<div class="it">${bdg(k)}「${q[2][x]}」<br><span class="sub">→ ${PT[k].s}</span></div>`}).join("")}).join("")+`<p class="nt">💡 関わりのヒント：${st[2]}</p></details>`});
+h+=`<div class="card"><h2>🌱 関わるときに</h2><p class="sub">どの傾向でも「そのままで大丈夫」を伝えながら、楽になる形（見通し・具体的な言葉・理由・時間の余裕）を一緒に探してみてください。この画面の数字や目安は、お子さまには見せない前提です。</p></div><button class="btn" onclick="hub()">🏠 とじる</button><button class="btn" onclick="pset()">⚙️ 暗証番号を変える・記録を消す</button>`;
+m4().innerHTML=h;scrollTo(0,0)}
+function rsAsk(){if(document.getElementById("rsd"))return;const d=document.createElement("div");d.id="rsd";d.className="rsd";d.innerHTML=`<div role="dialog" aria-modal="true"><h2>🔄 はじめから、やりなおす？</h2><p>「ぼくのちからさがし」を、まっさらにもどします。</p><b>🍃 きえるもの</b><ul><li>いま「ぼくのちからさがし」でえらんでいる答え</li><li>それでできている、地図の旗や、場所の大きさ</li></ul><b>✨ のこるもの</b><ul><li>「どうしようかな？」であそんだ記録</li><li>ちからカードのアルバム、せってい</li></ul><p>きえたものは、もとにもどせないよ。そのあと、もういちど あそんで、あたらしい地図をつくれるよ。</p><button class="y" id="rsy">はい、はじめからやる</button><button id="rsn">やっぱり、やめる</button></div>`;d.onclick=e=>{if(e.target===d)rsNo()};document.body.appendChild(d);document.getElementById("rsn").onclick=rsNo;document.getElementById("rsy").onclick=()=>{rsNo();A2.init()}}
+function rsNo(){const d=document.getElementById("rsd");if(d)d.remove()}
+function pset(){m4().innerHTML=`<h1>⚙️ 設定</h1><div class="card"><button class="btn" onclick="try{localStorage.removeItem('tgk')}catch(e){};pgate()">暗証番号を変える</button><button class="btn" onclick="if(confirm('保護者モードの記録を消します。もとにもどせません。')){QL={};try{localStorage.removeItem('tgq')}catch(e){};pview()}">記録を消す</button><button class="btn" onclick="pview()">もどる</button></div>`}
 </script></body></html>
